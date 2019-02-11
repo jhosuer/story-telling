@@ -1,0 +1,242 @@
+body, html  {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+svg {
+	width: 60%;
+	margin-top: 50px;
+}
+.st0{fill:#FFFFFF;}
+.st1{fill:#FFFFF5;stroke:#FFFFF5;stroke-miterlimit:10;}
+.st2{fill:#FFFFE7;stroke:#FFFFF5;stroke-miterlimit:10;}
+.st3{fill:#A4DCC5;}
+.st4{fill:#88B4A8;}
+.st5{fill:#8EBAAB;}
+.st6{fill:#517B6C;}
+.st7{fill:#556C64;}
+.st8{fill:#FFFFFF;stroke:#FFD6CB;stroke-width:10;stroke-miterlimit:10;}
+.st9{fill:#FFD6CB;}
+.st10{fill:#E0F5FF;}
+.st11{fill:#E0F6FA;}
+.st12{fill:#FFF1A8;}
+.st13{fill:#FFFFFF;stroke:#E0F6FA;stroke-width:10;stroke-miterlimit:10;}
+.st14{fill:#FFFFFF;stroke:#FFF1A8;stroke-width:10;stroke-miterlimit:10;}
+.st15{fill:#FFAD49;}
+.st16{fill:#F2F2F2;}
+.st17{font-family:'BrushScriptStd';}
+.st18{font-size:60px;}
+.st19{font-family:'Corbel';}
+.st20{font-size:80px;}
+.st21{font-size:131.5324px;}
+.st22{fill:#FFF2A8;}
+.st23{fill:#FFD893;}
+.st24{fill:#FF8A8B;}
+.st25{fill:#7C9A92;}
+.st26{fill:#D24B40;}
+.st27{fill:#75312C;}
+.st28{fill:#77969C;}
+.st29{fill:#774E35;}
+.st30{fill:#FFC3A0;}
+.st31{fill:#FF898D;stroke:#77969C;stroke-width:3;stroke-miterlimit:10;}
+.st32{fill:#BA8855;}
+	/*custom css*/
+	@keyframes moveMe {
+		from {
+			transform: translateX(-20px) translateY(-20px);
+		}
+		to {
+			transform: translateX(20px) translateY(20px);
+		}
+	}
+	@keyframes moveMouth {
+		from {
+				opacity: 0;	
+ 			 
+		}
+		to {
+				opacity: 1;	
+		}
+	}
+	@keyframes moveBall {
+		from {
+			transform: translateX(0px) translateY(-70px);
+		}
+		to {
+			transform: translateX(0px) translateY(40px);
+		}
+	}
+	@keyframes moveShadow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes moveSmallerShadow {
+		20% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.5;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	@keyframes moveSymbolsLeft {
+		form {
+			transform: translateX(0px) translateY(0px);
+			transform: rotateX(0deg) rotateY(0deg);
+			opacity: 1;
+		}
+		to {
+			transform: translateX(-20px) translateY(-20px);
+			transform: rotate3d(360deg);
+			opacity: 0;
+		}
+	}
+	@keyframes leftLeg {
+		form {
+			transform: translateX(0px) translateY(0px);
+		}
+		to {
+			transform: translateX(50px) translateY(0px);
+		}
+	}
+	@keyframes rightLeg {
+		form {
+			transform: translateX(0px) translateY(0px);
+		}
+		to {
+			transform: translateX(-30px) translateY(0px);
+		}
+	}
+	@keyframes theGirl {
+		from {
+			transform: translateX(0px) translateY(-20px);
+		}
+		to {
+			transform: translateX(0px) translateY(20px);
+		}
+	}
+	@keyframes theCloud {
+		from {
+			transform: translateX(20px) translateY(0px);
+		}
+		to {
+			transform: translateX(-700px) translateY(0px);
+		}
+	}
+	@keyframes theCloud2 {
+		from {
+			transform: translateX(100px) translateY(0px);
+		}
+		to {
+			transform: translateX(-1200px) translateY(0px);
+		}
+	}
+@keyframes leftTree {
+		from {
+			transform: translateX(100px) translateY(0px);
+		}
+		to {
+			transform: translateX(100px) translateY(-100px);
+		}
+	}
+
+@keyframes leftHand {
+		from {
+			transform: translateX(100px) translateY(0px);
+		}
+		to {
+			transform: translateX(100px) translateY(-100px);
+		}
+	}
+
+
+	circle.st22 {
+		z-index: 1;
+		animation-duration: 1.2s;
+		animation-name: moveMe;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	#wide_mouth.st24 {
+		animation-duration: 1.2s;
+		animation-name: moveMouth;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	path.st26, path.st27 {
+		animation-duration: 0.5s;
+		animation-name: moveBall;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	path.st7 {
+
+	}
+	path.st30 {
+		animation-duration: 0.2s;
+		animation-name: moveSmallerShadow;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	#bigger_shadow {
+		animation-duration: 0.5s;
+		animation-name: moveShadow;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	polygon.st9, circle.st8, polygon.st10, circle.st11 {
+		animation-duration: 1.5s;
+		animation-name: moveSymbolsLeft;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;	
+		transform-origin: left;
+	}
+	polygon.st12, circle.st13, circle.st9, circle.st14 {
+		animation-duration: 1.5s;
+		animation-name: moveSymbolsLeft;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;	
+	}
+	#left_leg {
+		animation-duration: 1.5s;
+		animation-name: leftLeg;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+		#right_leg {
+		animation-duration: 1.5s;
+		animation-name: rightLeg;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	#The_girl {
+		animation-duration: 1.5s;
+		animation-name: theGirl;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	#cloud1 {
+		animation-duration: 5s;
+		animation-name: theCloud;
+		animation-iteration-count: infinite;
+		animation-direction: normal;	
+	}
+	#cloud2 {
+		animation-duration: 8s;
+		animation-name: theCloud2;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+	}
+
+	path.st6, polygon.st7 {
+		animation-duration: 1.5s;
+		animation-name: leftTree;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+	}
